@@ -1,0 +1,8 @@
+<Profile xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/MSDeployGUI.Model">
+  <DestinationURL></DestinationURL>
+  <Name>AZURE PH734001 VM</Name>
+  <Password>whee0874ABCD</Password>
+  <Server>https://PH734001dev.cloudapp.net:8172/msdeploy.axd</Server>
+  <SiteName>104.45.143.9 dev.kellysolutions.com/erenewals</SiteName>
+  <UserName>PH734001\wheel</UserName>
+</Profile>
