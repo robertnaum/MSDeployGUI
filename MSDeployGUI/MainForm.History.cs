@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSDeployGUI.Model
+namespace MSDeployGUI
 {
-    public class Designer
+    partial class MainForm
     {
-        public bool WhatIf { get; set; }
-
-
-
     }
 }

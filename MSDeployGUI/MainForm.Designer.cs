@@ -52,49 +52,61 @@
             this.tabTemplates = new System.Windows.Forms.TabPage();
             this.ExecuteBtn = new System.Windows.Forms.Button();
             this.tabCentralControl = new System.Windows.Forms.TabControl();
-            this.DesignerTab = new System.Windows.Forms.TabPage();
-            this.operationSettingsBox = new System.Windows.Forms.ComboBox();
+            this.TabSync = new System.Windows.Forms.TabPage();
             this.destProviderSettingBox = new System.Windows.Forms.ComboBox();
             this.srcProviderSettingBox = new System.Windows.Forms.ComboBox();
             this.destPathToProviderObject = new System.Windows.Forms.Label();
             this.sourcePathToProviderLbl = new System.Windows.Forms.Label();
-            this.OperationSettingsLbl = new System.Windows.Forms.Label();
-            this.destProviderBox = new System.Windows.Forms.ComboBox();
-            this.destLbl = new System.Windows.Forms.Label();
-            this.sourceProviderBox = new System.Windows.Forms.ComboBox();
-            this.sourceLbl = new System.Windows.Forms.Label();
-            this.VerbLbl = new System.Windows.Forms.Label();
-            this.VerbBox = new System.Windows.Forms.ComboBox();
-            this.WhatIfChkBox = new System.Windows.Forms.CheckBox();
+            this.syncdestProviderBox = new System.Windows.Forms.ComboBox();
+            this.syncdestLbl = new System.Windows.Forms.Label();
+            this.syncsourceProviderBox = new System.Windows.Forms.ComboBox();
+            this.syncsourceLbl = new System.Windows.Forms.Label();
+            this.TabDump = new System.Windows.Forms.TabPage();
+            this.dumpSourceFileFolderDialogBtn = new System.Windows.Forms.Button();
+            this.dumpsourcePathToPOBox = new System.Windows.Forms.TextBox();
+            this.dumpsourceProviderBox = new System.Windows.Forms.ComboBox();
+            this.dumpsourceLbl = new System.Windows.Forms.Label();
+            this.TabDelete = new System.Windows.Forms.TabPage();
+            this.TabGetSystemInfo = new System.Windows.Forms.TabPage();
+            this.TabGetDependencies = new System.Windows.Forms.TabPage();
             this.FileSystemTab = new System.Windows.Forms.TabPage();
+            this.cellpanelfordesigneroptions = new System.Windows.Forms.Panel();
+            this.operationSettingsBox = new System.Windows.Forms.ComboBox();
+            this.OperationSettingsLbl = new System.Windows.Forms.Label();
+            this.WhatIfChkBox = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabLeftControl.SuspendLayout();
             this.tabHistory.SuspendLayout();
             this.tabProfiles.SuspendLayout();
             this.tabCentralControl.SuspendLayout();
-            this.DesignerTab.SuspendLayout();
+            this.TabSync.SuspendLayout();
+            this.TabDump.SuspendLayout();
+            this.cellpanelfordesigneroptions.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.80514F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.19485F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
-            this.tableLayoutPanel1.Controls.Add(this.console, 0, 2);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.19486F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.tableLayoutPanel1.Controls.Add(this.console, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.commandBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tabLeftControl, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.ExecuteBtn, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.tabCentralControl, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cellpanelfordesigneroptions, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1113, 516);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -103,12 +115,12 @@
             this.tableLayoutPanel1.SetColumnSpan(this.console, 3);
             this.console.Dock = System.Windows.Forms.DockStyle.Fill;
             this.console.IsInputEnabled = true;
-            this.console.Location = new System.Drawing.Point(4, 278);
+            this.console.Location = new System.Drawing.Point(4, 301);
             this.console.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.console.Name = "console";
             this.console.SendKeyboardCommandsToProcess = false;
             this.console.ShowDiagnostics = false;
-            this.console.Size = new System.Drawing.Size(1105, 234);
+            this.console.Size = new System.Drawing.Size(1105, 211);
             this.console.TabIndex = 0;
             // 
             // menuStrip1
@@ -119,7 +131,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(271, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(266, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -193,18 +205,18 @@
             // aboutMSDeployGUIToolStripMenuItem
             // 
             this.aboutMSDeployGUIToolStripMenuItem.Name = "aboutMSDeployGUIToolStripMenuItem";
-            this.aboutMSDeployGUIToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
-            this.aboutMSDeployGUIToolStripMenuItem.Text = "Running as Administrator";
+            this.aboutMSDeployGUIToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
+            this.aboutMSDeployGUIToolStripMenuItem.Text = "Running as";
             // 
             // aboutMSDeployGUIToolStripMenuItem1
             // 
             this.aboutMSDeployGUIToolStripMenuItem1.Name = "aboutMSDeployGUIToolStripMenuItem1";
-            this.aboutMSDeployGUIToolStripMenuItem1.Size = new System.Drawing.Size(248, 6);
+            this.aboutMSDeployGUIToolStripMenuItem1.Size = new System.Drawing.Size(219, 6);
             // 
             // aboutMSDeployGUIToolStripMenuItem2
             // 
             this.aboutMSDeployGUIToolStripMenuItem2.Name = "aboutMSDeployGUIToolStripMenuItem2";
-            this.aboutMSDeployGUIToolStripMenuItem2.Size = new System.Drawing.Size(251, 26);
+            this.aboutMSDeployGUIToolStripMenuItem2.Size = new System.Drawing.Size(222, 26);
             this.aboutMSDeployGUIToolStripMenuItem2.Text = "About MSDeployGUI";
             // 
             // commandBox
@@ -212,9 +224,9 @@
             this.commandBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.commandBox.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.commandBox.FormattingEnabled = true;
-            this.commandBox.Location = new System.Drawing.Point(274, 3);
+            this.commandBox.Location = new System.Drawing.Point(269, 3);
             this.commandBox.Name = "commandBox";
-            this.commandBox.Size = new System.Drawing.Size(734, 26);
+            this.commandBox.Size = new System.Drawing.Size(722, 26);
             this.commandBox.TabIndex = 2;
             // 
             // tabLeftControl
@@ -226,8 +238,9 @@
             this.tabLeftControl.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabLeftControl.Location = new System.Drawing.Point(3, 36);
             this.tabLeftControl.Name = "tabLeftControl";
+            this.tableLayoutPanel1.SetRowSpan(this.tabLeftControl, 2);
             this.tabLeftControl.SelectedIndex = 0;
-            this.tabLeftControl.Size = new System.Drawing.Size(265, 235);
+            this.tabLeftControl.Size = new System.Drawing.Size(260, 258);
             this.tabLeftControl.TabIndex = 3;
             // 
             // tabHistory
@@ -237,7 +250,7 @@
             this.tabHistory.Location = new System.Drawing.Point(4, 27);
             this.tabHistory.Name = "tabHistory";
             this.tabHistory.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHistory.Size = new System.Drawing.Size(257, 204);
+            this.tabHistory.Size = new System.Drawing.Size(252, 227);
             this.tabHistory.TabIndex = 0;
             this.tabHistory.Text = "History";
             this.tabHistory.UseVisualStyleBackColor = true;
@@ -253,7 +266,7 @@
             "Item 3"});
             this.HistoryListBox.Location = new System.Drawing.Point(3, 3);
             this.HistoryListBox.Name = "HistoryListBox";
-            this.HistoryListBox.Size = new System.Drawing.Size(251, 198);
+            this.HistoryListBox.Size = new System.Drawing.Size(246, 221);
             this.HistoryListBox.TabIndex = 5;
             // 
             // tabProfiles
@@ -263,7 +276,7 @@
             this.tabProfiles.Location = new System.Drawing.Point(4, 27);
             this.tabProfiles.Name = "tabProfiles";
             this.tabProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProfiles.Size = new System.Drawing.Size(257, 204);
+            this.tabProfiles.Size = new System.Drawing.Size(252, 227);
             this.tabProfiles.TabIndex = 1;
             this.tabProfiles.Text = "Profiles";
             this.tabProfiles.UseVisualStyleBackColor = true;
@@ -275,7 +288,7 @@
             this.ProfileListBox.ItemHeight = 20;
             this.ProfileListBox.Location = new System.Drawing.Point(3, 3);
             this.ProfileListBox.Name = "ProfileListBox";
-            this.ProfileListBox.Size = new System.Drawing.Size(251, 198);
+            this.ProfileListBox.Size = new System.Drawing.Size(246, 221);
             this.ProfileListBox.TabIndex = 0;
             this.ProfileListBox.DoubleClick += new System.EventHandler(this.ProfileListBox_DoubleClick);
             // 
@@ -284,14 +297,14 @@
             this.tabTemplates.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabTemplates.Location = new System.Drawing.Point(4, 27);
             this.tabTemplates.Name = "tabTemplates";
-            this.tabTemplates.Size = new System.Drawing.Size(257, 204);
+            this.tabTemplates.Size = new System.Drawing.Size(252, 227);
             this.tabTemplates.TabIndex = 2;
             this.tabTemplates.Text = "Templates";
             this.tabTemplates.UseVisualStyleBackColor = true;
             // 
             // ExecuteBtn
             // 
-            this.ExecuteBtn.Location = new System.Drawing.Point(1014, 3);
+            this.ExecuteBtn.Location = new System.Drawing.Point(997, 3);
             this.ExecuteBtn.Name = "ExecuteBtn";
             this.ExecuteBtn.Size = new System.Drawing.Size(90, 27);
             this.ExecuteBtn.TabIndex = 4;
@@ -301,38 +314,243 @@
             // tabCentralControl
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.tabCentralControl, 2);
-            this.tabCentralControl.Controls.Add(this.DesignerTab);
+            this.tabCentralControl.Controls.Add(this.TabSync);
+            this.tabCentralControl.Controls.Add(this.TabDump);
+            this.tabCentralControl.Controls.Add(this.TabDelete);
+            this.tabCentralControl.Controls.Add(this.TabGetSystemInfo);
+            this.tabCentralControl.Controls.Add(this.TabGetDependencies);
             this.tabCentralControl.Controls.Add(this.FileSystemTab);
             this.tabCentralControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabCentralControl.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabCentralControl.Location = new System.Drawing.Point(274, 36);
+            this.tabCentralControl.Location = new System.Drawing.Point(269, 36);
             this.tabCentralControl.Name = "tabCentralControl";
             this.tabCentralControl.SelectedIndex = 0;
-            this.tabCentralControl.Size = new System.Drawing.Size(836, 235);
+            this.tabCentralControl.Size = new System.Drawing.Size(841, 213);
             this.tabCentralControl.TabIndex = 5;
+            this.tabCentralControl.SelectedIndexChanged += new System.EventHandler(this.tabCentralControl_SelectedIndexChanged);
             // 
-            // DesignerTab
+            // TabSync
             // 
-            this.DesignerTab.Controls.Add(this.operationSettingsBox);
-            this.DesignerTab.Controls.Add(this.destProviderSettingBox);
-            this.DesignerTab.Controls.Add(this.srcProviderSettingBox);
-            this.DesignerTab.Controls.Add(this.destPathToProviderObject);
-            this.DesignerTab.Controls.Add(this.sourcePathToProviderLbl);
-            this.DesignerTab.Controls.Add(this.OperationSettingsLbl);
-            this.DesignerTab.Controls.Add(this.destProviderBox);
-            this.DesignerTab.Controls.Add(this.destLbl);
-            this.DesignerTab.Controls.Add(this.sourceProviderBox);
-            this.DesignerTab.Controls.Add(this.sourceLbl);
-            this.DesignerTab.Controls.Add(this.VerbLbl);
-            this.DesignerTab.Controls.Add(this.VerbBox);
-            this.DesignerTab.Controls.Add(this.WhatIfChkBox);
-            this.DesignerTab.Location = new System.Drawing.Point(4, 27);
-            this.DesignerTab.Name = "DesignerTab";
-            this.DesignerTab.Padding = new System.Windows.Forms.Padding(3);
-            this.DesignerTab.Size = new System.Drawing.Size(828, 204);
-            this.DesignerTab.TabIndex = 0;
-            this.DesignerTab.Text = "Designer";
-            this.DesignerTab.UseVisualStyleBackColor = true;
+            this.TabSync.Controls.Add(this.destProviderSettingBox);
+            this.TabSync.Controls.Add(this.srcProviderSettingBox);
+            this.TabSync.Controls.Add(this.destPathToProviderObject);
+            this.TabSync.Controls.Add(this.sourcePathToProviderLbl);
+            this.TabSync.Controls.Add(this.syncdestProviderBox);
+            this.TabSync.Controls.Add(this.syncdestLbl);
+            this.TabSync.Controls.Add(this.syncsourceProviderBox);
+            this.TabSync.Controls.Add(this.syncsourceLbl);
+            this.TabSync.Location = new System.Drawing.Point(4, 27);
+            this.TabSync.Name = "TabSync";
+            this.TabSync.Padding = new System.Windows.Forms.Padding(3);
+            this.TabSync.Size = new System.Drawing.Size(833, 182);
+            this.TabSync.TabIndex = 0;
+            this.TabSync.Text = "sync";
+            this.TabSync.UseVisualStyleBackColor = true;
+            // 
+            // destProviderSettingBox
+            // 
+            this.destProviderSettingBox.FormattingEnabled = true;
+            this.destProviderSettingBox.Items.AddRange(new object[] {
+            "authType",
+            "computerName",
+            "encryptPassword",
+            "getCredentials",
+            "ignoreErrors",
+            "includeAcls",
+            "password",
+            "storeCredentials",
+            "tempAgent",
+            "userName",
+            "wmsvc"});
+            this.destProviderSettingBox.Location = new System.Drawing.Point(478, 64);
+            this.destProviderSettingBox.Name = "destProviderSettingBox";
+            this.destProviderSettingBox.Size = new System.Drawing.Size(257, 26);
+            this.destProviderSettingBox.TabIndex = 11;
+            // 
+            // srcProviderSettingBox
+            // 
+            this.srcProviderSettingBox.FormattingEnabled = true;
+            this.srcProviderSettingBox.Items.AddRange(new object[] {
+            "authType",
+            "computerName",
+            "encryptPassword",
+            "getCredentials",
+            "ignoreErrors",
+            "includeAcls",
+            "password",
+            "storeCredentials",
+            "tempAgent",
+            "userName",
+            "wmsvc"});
+            this.srcProviderSettingBox.Location = new System.Drawing.Point(477, 16);
+            this.srcProviderSettingBox.Name = "srcProviderSettingBox";
+            this.srcProviderSettingBox.Size = new System.Drawing.Size(257, 26);
+            this.srcProviderSettingBox.TabIndex = 10;
+            // 
+            // destPathToProviderObject
+            // 
+            this.destPathToProviderObject.AutoSize = true;
+            this.destPathToProviderObject.Location = new System.Drawing.Point(275, 68);
+            this.destPathToProviderObject.Name = "destPathToProviderObject";
+            this.destPathToProviderObject.Size = new System.Drawing.Size(176, 18);
+            this.destPathToProviderObject.TabIndex = 9;
+            this.destPathToProviderObject.Text = "=pathToProviderObject";
+            // 
+            // sourcePathToProviderLbl
+            // 
+            this.sourcePathToProviderLbl.AutoSize = true;
+            this.sourcePathToProviderLbl.Location = new System.Drawing.Point(275, 19);
+            this.sourcePathToProviderLbl.Name = "sourcePathToProviderLbl";
+            this.sourcePathToProviderLbl.Size = new System.Drawing.Size(176, 18);
+            this.sourcePathToProviderLbl.TabIndex = 8;
+            this.sourcePathToProviderLbl.Text = "=pathToProviderObject";
+            // 
+            // syncdestProviderBox
+            // 
+            this.syncdestProviderBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.syncdestProviderBox.FormattingEnabled = true;
+            this.syncdestProviderBox.Items.AddRange(new object[] {
+            "Provider1",
+            "Provider2",
+            "Provider3"});
+            this.syncdestProviderBox.Location = new System.Drawing.Point(89, 64);
+            this.syncdestProviderBox.Name = "syncdestProviderBox";
+            this.syncdestProviderBox.Size = new System.Drawing.Size(159, 26);
+            this.syncdestProviderBox.TabIndex = 6;
+            // 
+            // syncdestLbl
+            // 
+            this.syncdestLbl.AutoSize = true;
+            this.syncdestLbl.Location = new System.Drawing.Point(11, 68);
+            this.syncdestLbl.Name = "syncdestLbl";
+            this.syncdestLbl.Size = new System.Drawing.Size(56, 18);
+            this.syncdestLbl.TabIndex = 5;
+            this.syncdestLbl.Text = "-dest:";
+            // 
+            // syncsourceProviderBox
+            // 
+            this.syncsourceProviderBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.syncsourceProviderBox.FormattingEnabled = true;
+            this.syncsourceProviderBox.Items.AddRange(new object[] {
+            "Provider 1",
+            "Provider 2",
+            "Provider 3"});
+            this.syncsourceProviderBox.Location = new System.Drawing.Point(89, 16);
+            this.syncsourceProviderBox.Name = "syncsourceProviderBox";
+            this.syncsourceProviderBox.Size = new System.Drawing.Size(159, 26);
+            this.syncsourceProviderBox.TabIndex = 4;
+            // 
+            // syncsourceLbl
+            // 
+            this.syncsourceLbl.AutoSize = true;
+            this.syncsourceLbl.Location = new System.Drawing.Point(11, 19);
+            this.syncsourceLbl.Name = "syncsourceLbl";
+            this.syncsourceLbl.Size = new System.Drawing.Size(72, 18);
+            this.syncsourceLbl.TabIndex = 3;
+            this.syncsourceLbl.Text = "-source:";
+            // 
+            // TabDump
+            // 
+            this.TabDump.Controls.Add(this.dumpSourceFileFolderDialogBtn);
+            this.TabDump.Controls.Add(this.dumpsourcePathToPOBox);
+            this.TabDump.Controls.Add(this.dumpsourceProviderBox);
+            this.TabDump.Controls.Add(this.dumpsourceLbl);
+            this.TabDump.Location = new System.Drawing.Point(4, 27);
+            this.TabDump.Name = "TabDump";
+            this.TabDump.Padding = new System.Windows.Forms.Padding(3);
+            this.TabDump.Size = new System.Drawing.Size(833, 182);
+            this.TabDump.TabIndex = 2;
+            this.TabDump.Text = "dump";
+            this.TabDump.UseVisualStyleBackColor = true;
+            // 
+            // dumpSourceFileFolderDialogBtn
+            // 
+            this.dumpSourceFileFolderDialogBtn.Image = global::MSDeployGUI.Properties.Resources.FileSource_16x_32;
+            this.dumpSourceFileFolderDialogBtn.Location = new System.Drawing.Point(272, 16);
+            this.dumpSourceFileFolderDialogBtn.Name = "dumpSourceFileFolderDialogBtn";
+            this.dumpSourceFileFolderDialogBtn.Size = new System.Drawing.Size(29, 26);
+            this.dumpSourceFileFolderDialogBtn.TabIndex = 4;
+            this.dumpSourceFileFolderDialogBtn.UseVisualStyleBackColor = true;
+            this.dumpSourceFileFolderDialogBtn.Click += new System.EventHandler(this.dumpSourceFileFolderDialogBtn_Click);
+            // 
+            // dumpsourcePathToPOBox
+            // 
+            this.dumpsourcePathToPOBox.Location = new System.Drawing.Point(307, 17);
+            this.dumpsourcePathToPOBox.Name = "dumpsourcePathToPOBox";
+            this.dumpsourcePathToPOBox.Size = new System.Drawing.Size(418, 25);
+            this.dumpsourcePathToPOBox.TabIndex = 3;
+            // 
+            // dumpsourceProviderBox
+            // 
+            this.dumpsourceProviderBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dumpsourceProviderBox.FormattingEnabled = true;
+            this.dumpsourceProviderBox.Items.AddRange(new object[] {
+            "contentPath",
+            "dirPath",
+            "filePath"});
+            this.dumpsourceProviderBox.Location = new System.Drawing.Point(89, 16);
+            this.dumpsourceProviderBox.Name = "dumpsourceProviderBox";
+            this.dumpsourceProviderBox.Size = new System.Drawing.Size(159, 26);
+            this.dumpsourceProviderBox.TabIndex = 1;
+            this.dumpsourceProviderBox.SelectedIndexChanged += new System.EventHandler(this.dumpsourceProviderBox_SelectedIndexChanged);
+            // 
+            // dumpsourceLbl
+            // 
+            this.dumpsourceLbl.AutoSize = true;
+            this.dumpsourceLbl.Location = new System.Drawing.Point(11, 19);
+            this.dumpsourceLbl.Name = "dumpsourceLbl";
+            this.dumpsourceLbl.Size = new System.Drawing.Size(72, 18);
+            this.dumpsourceLbl.TabIndex = 0;
+            this.dumpsourceLbl.Text = "-source:";
+            // 
+            // TabDelete
+            // 
+            this.TabDelete.Location = new System.Drawing.Point(4, 27);
+            this.TabDelete.Name = "TabDelete";
+            this.TabDelete.Padding = new System.Windows.Forms.Padding(3);
+            this.TabDelete.Size = new System.Drawing.Size(833, 182);
+            this.TabDelete.TabIndex = 3;
+            this.TabDelete.Text = "delete";
+            this.TabDelete.UseVisualStyleBackColor = true;
+            // 
+            // TabGetSystemInfo
+            // 
+            this.TabGetSystemInfo.Location = new System.Drawing.Point(4, 27);
+            this.TabGetSystemInfo.Name = "TabGetSystemInfo";
+            this.TabGetSystemInfo.Size = new System.Drawing.Size(833, 182);
+            this.TabGetSystemInfo.TabIndex = 4;
+            this.TabGetSystemInfo.Text = "getSystemInfo";
+            this.TabGetSystemInfo.UseVisualStyleBackColor = true;
+            // 
+            // TabGetDependencies
+            // 
+            this.TabGetDependencies.Location = new System.Drawing.Point(4, 27);
+            this.TabGetDependencies.Name = "TabGetDependencies";
+            this.TabGetDependencies.Size = new System.Drawing.Size(833, 182);
+            this.TabGetDependencies.TabIndex = 5;
+            this.TabGetDependencies.Text = "getDependencies";
+            this.TabGetDependencies.UseVisualStyleBackColor = true;
+            // 
+            // FileSystemTab
+            // 
+            this.FileSystemTab.Location = new System.Drawing.Point(4, 27);
+            this.FileSystemTab.Name = "FileSystemTab";
+            this.FileSystemTab.Padding = new System.Windows.Forms.Padding(3);
+            this.FileSystemTab.Size = new System.Drawing.Size(833, 182);
+            this.FileSystemTab.TabIndex = 1;
+            this.FileSystemTab.Text = "File System";
+            this.FileSystemTab.UseVisualStyleBackColor = true;
+            // 
+            // cellpanelfordesigneroptions
+            // 
+            this.cellpanelfordesigneroptions.Controls.Add(this.operationSettingsBox);
+            this.cellpanelfordesigneroptions.Controls.Add(this.OperationSettingsLbl);
+            this.cellpanelfordesigneroptions.Controls.Add(this.WhatIfChkBox);
+            this.cellpanelfordesigneroptions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cellpanelfordesigneroptions.Location = new System.Drawing.Point(269, 255);
+            this.cellpanelfordesigneroptions.Name = "cellpanelfordesigneroptions";
+            this.cellpanelfordesigneroptions.Size = new System.Drawing.Size(722, 39);
+            this.cellpanelfordesigneroptions.TabIndex = 6;
             // 
             // operationSettingsBox
             // 
@@ -367,169 +585,29 @@
             "webServerDir",
             "xml",
             "xpath"});
-            this.operationSettingsBox.Location = new System.Drawing.Point(270, 167);
+            this.operationSettingsBox.Location = new System.Drawing.Point(337, 9);
             this.operationSettingsBox.Name = "operationSettingsBox";
-            this.operationSettingsBox.Size = new System.Drawing.Size(464, 26);
-            this.operationSettingsBox.TabIndex = 12;
-            // 
-            // destProviderSettingBox
-            // 
-            this.destProviderSettingBox.FormattingEnabled = true;
-            this.destProviderSettingBox.Items.AddRange(new object[] {
-            "authType",
-            "computerName",
-            "encryptPassword",
-            "getCredentials",
-            "ignoreErrors",
-            "includeAcls",
-            "password",
-            "storeCredentials",
-            "tempAgent",
-            "userName",
-            "wmsvc"});
-            this.destProviderSettingBox.Location = new System.Drawing.Point(478, 116);
-            this.destProviderSettingBox.Name = "destProviderSettingBox";
-            this.destProviderSettingBox.Size = new System.Drawing.Size(257, 26);
-            this.destProviderSettingBox.TabIndex = 11;
-            // 
-            // srcProviderSettingBox
-            // 
-            this.srcProviderSettingBox.FormattingEnabled = true;
-            this.srcProviderSettingBox.Items.AddRange(new object[] {
-            "authType",
-            "computerName",
-            "encryptPassword",
-            "getCredentials",
-            "ignoreErrors",
-            "includeAcls",
-            "password",
-            "storeCredentials",
-            "tempAgent",
-            "userName",
-            "wmsvc"});
-            this.srcProviderSettingBox.Location = new System.Drawing.Point(477, 68);
-            this.srcProviderSettingBox.Name = "srcProviderSettingBox";
-            this.srcProviderSettingBox.Size = new System.Drawing.Size(257, 26);
-            this.srcProviderSettingBox.TabIndex = 10;
-            // 
-            // destPathToProviderObject
-            // 
-            this.destPathToProviderObject.AutoSize = true;
-            this.destPathToProviderObject.Location = new System.Drawing.Point(275, 120);
-            this.destPathToProviderObject.Name = "destPathToProviderObject";
-            this.destPathToProviderObject.Size = new System.Drawing.Size(176, 18);
-            this.destPathToProviderObject.TabIndex = 9;
-            this.destPathToProviderObject.Text = "=pathToProviderObject";
-            // 
-            // sourcePathToProviderLbl
-            // 
-            this.sourcePathToProviderLbl.AutoSize = true;
-            this.sourcePathToProviderLbl.Location = new System.Drawing.Point(275, 71);
-            this.sourcePathToProviderLbl.Name = "sourcePathToProviderLbl";
-            this.sourcePathToProviderLbl.Size = new System.Drawing.Size(176, 18);
-            this.sourcePathToProviderLbl.TabIndex = 8;
-            this.sourcePathToProviderLbl.Text = "=pathToProviderObject";
+            this.operationSettingsBox.Size = new System.Drawing.Size(375, 24);
+            this.operationSettingsBox.TabIndex = 16;
             // 
             // OperationSettingsLbl
             // 
             this.OperationSettingsLbl.AutoSize = true;
-            this.OperationSettingsLbl.Location = new System.Drawing.Point(11, 170);
+            this.OperationSettingsLbl.Location = new System.Drawing.Point(118, 12);
             this.OperationSettingsLbl.Name = "OperationSettingsLbl";
-            this.OperationSettingsLbl.Size = new System.Drawing.Size(216, 18);
-            this.OperationSettingsLbl.TabIndex = 7;
+            this.OperationSettingsLbl.Size = new System.Drawing.Size(191, 17);
+            this.OperationSettingsLbl.TabIndex = 15;
             this.OperationSettingsLbl.Text = "-MSDeployOperationSettings";
-            // 
-            // destProviderBox
-            // 
-            this.destProviderBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.destProviderBox.FormattingEnabled = true;
-            this.destProviderBox.Items.AddRange(new object[] {
-            "Provider1",
-            "Provider2",
-            "Provider3"});
-            this.destProviderBox.Location = new System.Drawing.Point(89, 116);
-            this.destProviderBox.Name = "destProviderBox";
-            this.destProviderBox.Size = new System.Drawing.Size(159, 26);
-            this.destProviderBox.TabIndex = 6;
-            this.destProviderBox.SelectedIndexChanged += new System.EventHandler(this.destProviderBox_SelectedIndexChanged);
-            // 
-            // destLbl
-            // 
-            this.destLbl.AutoSize = true;
-            this.destLbl.Location = new System.Drawing.Point(11, 120);
-            this.destLbl.Name = "destLbl";
-            this.destLbl.Size = new System.Drawing.Size(56, 18);
-            this.destLbl.TabIndex = 5;
-            this.destLbl.Text = "-dest:";
-            // 
-            // sourceProviderBox
-            // 
-            this.sourceProviderBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sourceProviderBox.FormattingEnabled = true;
-            this.sourceProviderBox.Items.AddRange(new object[] {
-            "Provider 1",
-            "Provider 2",
-            "Provider 3"});
-            this.sourceProviderBox.Location = new System.Drawing.Point(89, 68);
-            this.sourceProviderBox.Name = "sourceProviderBox";
-            this.sourceProviderBox.Size = new System.Drawing.Size(159, 26);
-            this.sourceProviderBox.TabIndex = 4;
-            this.sourceProviderBox.SelectedIndexChanged += new System.EventHandler(this.sourceProviderBox_SelectedIndexChanged);
-            // 
-            // sourceLbl
-            // 
-            this.sourceLbl.AutoSize = true;
-            this.sourceLbl.Location = new System.Drawing.Point(11, 71);
-            this.sourceLbl.Name = "sourceLbl";
-            this.sourceLbl.Size = new System.Drawing.Size(72, 18);
-            this.sourceLbl.TabIndex = 3;
-            this.sourceLbl.Text = "-source:";
-            // 
-            // VerbLbl
-            // 
-            this.VerbLbl.AutoSize = true;
-            this.VerbLbl.Location = new System.Drawing.Point(11, 25);
-            this.VerbLbl.Name = "VerbLbl";
-            this.VerbLbl.Size = new System.Drawing.Size(56, 18);
-            this.VerbLbl.TabIndex = 2;
-            this.VerbLbl.Text = "-verb:";
-            // 
-            // VerbBox
-            // 
-            this.VerbBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.VerbBox.FormattingEnabled = true;
-            this.VerbBox.Items.AddRange(new object[] {
-            "delete",
-            "dump",
-            "getDependencies",
-            "getSystemInfo",
-            "sync"});
-            this.VerbBox.Location = new System.Drawing.Point(89, 21);
-            this.VerbBox.Name = "VerbBox";
-            this.VerbBox.Size = new System.Drawing.Size(159, 26);
-            this.VerbBox.TabIndex = 1;
-            this.VerbBox.SelectedIndexChanged += new System.EventHandler(this.VerbBox_SelectedIndexChanged);
             // 
             // WhatIfChkBox
             // 
             this.WhatIfChkBox.AutoSize = true;
-            this.WhatIfChkBox.Location = new System.Drawing.Point(731, 21);
+            this.WhatIfChkBox.Location = new System.Drawing.Point(16, 11);
             this.WhatIfChkBox.Name = "WhatIfChkBox";
-            this.WhatIfChkBox.Size = new System.Drawing.Size(86, 22);
-            this.WhatIfChkBox.TabIndex = 0;
-            this.WhatIfChkBox.Text = "-whatif";
+            this.WhatIfChkBox.Size = new System.Drawing.Size(71, 21);
+            this.WhatIfChkBox.TabIndex = 14;
+            this.WhatIfChkBox.Text = "-whatIf";
             this.WhatIfChkBox.UseVisualStyleBackColor = true;
-            this.WhatIfChkBox.CheckedChanged += new System.EventHandler(this.WhatIfChkBox_CheckedChanged);
-            // 
-            // FileSystemTab
-            // 
-            this.FileSystemTab.Location = new System.Drawing.Point(4, 27);
-            this.FileSystemTab.Name = "FileSystemTab";
-            this.FileSystemTab.Padding = new System.Windows.Forms.Padding(3);
-            this.FileSystemTab.Size = new System.Drawing.Size(828, 204);
-            this.FileSystemTab.TabIndex = 1;
-            this.FileSystemTab.Text = "File System";
-            this.FileSystemTab.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -549,8 +627,12 @@
             this.tabHistory.ResumeLayout(false);
             this.tabProfiles.ResumeLayout(false);
             this.tabCentralControl.ResumeLayout(false);
-            this.DesignerTab.ResumeLayout(false);
-            this.DesignerTab.PerformLayout();
+            this.TabSync.ResumeLayout(false);
+            this.TabSync.PerformLayout();
+            this.TabDump.ResumeLayout(false);
+            this.TabDump.PerformLayout();
+            this.cellpanelfordesigneroptions.ResumeLayout(false);
+            this.cellpanelfordesigneroptions.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -570,7 +652,7 @@
         private System.Windows.Forms.ToolStripMenuItem addProfileToolStripMenuItem;
         private System.Windows.Forms.ListBox HistoryListBox;
         private System.Windows.Forms.TabControl tabCentralControl;
-        private System.Windows.Forms.TabPage DesignerTab;
+        private System.Windows.Forms.TabPage TabSync;
         private System.Windows.Forms.TabPage FileSystemTab;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
@@ -578,22 +660,29 @@
         private System.Windows.Forms.ToolStripMenuItem SaveHistoryToolStripMenuItem;
         private System.Windows.Forms.ListBox ProfileListBox;
         private System.Windows.Forms.ToolStripMenuItem SettingsMenuItem3;
-        private System.Windows.Forms.CheckBox WhatIfChkBox;
-        private System.Windows.Forms.ComboBox VerbBox;
-        private System.Windows.Forms.Label VerbLbl;
-        private System.Windows.Forms.Label sourceLbl;
-        private System.Windows.Forms.ComboBox sourceProviderBox;
-        private System.Windows.Forms.Label destLbl;
-        private System.Windows.Forms.ComboBox destProviderBox;
-        private System.Windows.Forms.Label OperationSettingsLbl;
+        private System.Windows.Forms.Label syncsourceLbl;
+        private System.Windows.Forms.ComboBox syncsourceProviderBox;
+        private System.Windows.Forms.Label syncdestLbl;
+        private System.Windows.Forms.ComboBox syncdestProviderBox;
         private System.Windows.Forms.Label sourcePathToProviderLbl;
         private System.Windows.Forms.Label destPathToProviderObject;
         private System.Windows.Forms.ComboBox srcProviderSettingBox;
         private System.Windows.Forms.ComboBox destProviderSettingBox;
-        private System.Windows.Forms.ComboBox operationSettingsBox;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutMSDeployGUIToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator aboutMSDeployGUIToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aboutMSDeployGUIToolStripMenuItem2;
+        private System.Windows.Forms.TabPage TabDump;
+        private System.Windows.Forms.TabPage TabDelete;
+        private System.Windows.Forms.TabPage TabGetSystemInfo;
+        private System.Windows.Forms.Panel cellpanelfordesigneroptions;
+        private System.Windows.Forms.CheckBox WhatIfChkBox;
+        private System.Windows.Forms.TabPage TabGetDependencies;
+        private System.Windows.Forms.ComboBox operationSettingsBox;
+        private System.Windows.Forms.Label OperationSettingsLbl;
+        private System.Windows.Forms.Label dumpsourceLbl;
+        private System.Windows.Forms.ComboBox dumpsourceProviderBox;
+        private System.Windows.Forms.TextBox dumpsourcePathToPOBox;
+        private System.Windows.Forms.Button dumpSourceFileFolderDialogBtn;
     }
 }

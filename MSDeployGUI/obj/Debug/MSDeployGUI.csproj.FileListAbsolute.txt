@@ -17,3 +17,8 @@ C:\Users\Robert.KRS\Source\Repos\MSDeployGUI\MSDeployGUI\obj\Debug\MSDeployGUI.M
 C:\Users\Robert.KRS\Source\Repos\MSDeployGUI\MSDeployGUI\obj\Debug\MSDeployGUI.csproj.CopyComplete
 C:\Users\Robert.KRS\Source\Repos\MSDeployGUI\MSDeployGUI\obj\Debug\MSDeployGUI.EditProfile.resources
 C:\Users\Robert.KRS\Source\repos\MSDeployGUI\MSDeployGUI\obj\Debug\MSDeployGUI.EditSettings.resources
+C:\Users\Robert.KRS\Source\repos\MSDeployGUI\MSDeployGUI\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\Robert.KRS\Source\repos\MSDeployGUI\MSDeployGUI\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+C:\Users\Robert.KRS\Source\repos\MSDeployGUI\MSDeployGUI\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.dll
+C:\Users\Robert.KRS\Source\repos\MSDeployGUI\MSDeployGUI\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Robert.KRS\Source\repos\MSDeployGUI\MSDeployGUI\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
