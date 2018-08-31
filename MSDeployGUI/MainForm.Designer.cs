@@ -90,7 +90,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.80514F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.19486F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
             this.tableLayoutPanel1.Controls.Add(this.console, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.commandBox, 1, 0);
@@ -131,7 +131,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(266, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(265, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -224,9 +224,9 @@
             this.commandBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.commandBox.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.commandBox.FormattingEnabled = true;
-            this.commandBox.Location = new System.Drawing.Point(269, 3);
+            this.commandBox.Location = new System.Drawing.Point(268, 3);
             this.commandBox.Name = "commandBox";
-            this.commandBox.Size = new System.Drawing.Size(722, 26);
+            this.commandBox.Size = new System.Drawing.Size(719, 26);
             this.commandBox.TabIndex = 2;
             // 
             // tabLeftControl
@@ -240,7 +240,7 @@
             this.tabLeftControl.Name = "tabLeftControl";
             this.tableLayoutPanel1.SetRowSpan(this.tabLeftControl, 2);
             this.tabLeftControl.SelectedIndex = 0;
-            this.tabLeftControl.Size = new System.Drawing.Size(260, 258);
+            this.tabLeftControl.Size = new System.Drawing.Size(259, 258);
             this.tabLeftControl.TabIndex = 3;
             // 
             // tabHistory
@@ -250,7 +250,7 @@
             this.tabHistory.Location = new System.Drawing.Point(4, 27);
             this.tabHistory.Name = "tabHistory";
             this.tabHistory.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHistory.Size = new System.Drawing.Size(252, 227);
+            this.tabHistory.Size = new System.Drawing.Size(251, 227);
             this.tabHistory.TabIndex = 0;
             this.tabHistory.Text = "History";
             this.tabHistory.UseVisualStyleBackColor = true;
@@ -266,7 +266,7 @@
             "Item 3"});
             this.HistoryListBox.Location = new System.Drawing.Point(3, 3);
             this.HistoryListBox.Name = "HistoryListBox";
-            this.HistoryListBox.Size = new System.Drawing.Size(246, 221);
+            this.HistoryListBox.Size = new System.Drawing.Size(245, 221);
             this.HistoryListBox.TabIndex = 5;
             // 
             // tabProfiles
@@ -276,7 +276,7 @@
             this.tabProfiles.Location = new System.Drawing.Point(4, 27);
             this.tabProfiles.Name = "tabProfiles";
             this.tabProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProfiles.Size = new System.Drawing.Size(252, 227);
+            this.tabProfiles.Size = new System.Drawing.Size(251, 227);
             this.tabProfiles.TabIndex = 1;
             this.tabProfiles.Text = "Profiles";
             this.tabProfiles.UseVisualStyleBackColor = true;
@@ -288,7 +288,7 @@
             this.ProfileListBox.ItemHeight = 20;
             this.ProfileListBox.Location = new System.Drawing.Point(3, 3);
             this.ProfileListBox.Name = "ProfileListBox";
-            this.ProfileListBox.Size = new System.Drawing.Size(246, 221);
+            this.ProfileListBox.Size = new System.Drawing.Size(245, 221);
             this.ProfileListBox.TabIndex = 0;
             this.ProfileListBox.DoubleClick += new System.EventHandler(this.ProfileListBox_DoubleClick);
             // 
@@ -297,14 +297,14 @@
             this.tabTemplates.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabTemplates.Location = new System.Drawing.Point(4, 27);
             this.tabTemplates.Name = "tabTemplates";
-            this.tabTemplates.Size = new System.Drawing.Size(252, 227);
+            this.tabTemplates.Size = new System.Drawing.Size(251, 227);
             this.tabTemplates.TabIndex = 2;
             this.tabTemplates.Text = "Templates";
             this.tabTemplates.UseVisualStyleBackColor = true;
             // 
             // ExecuteBtn
             // 
-            this.ExecuteBtn.Location = new System.Drawing.Point(997, 3);
+            this.ExecuteBtn.Location = new System.Drawing.Point(993, 3);
             this.ExecuteBtn.Name = "ExecuteBtn";
             this.ExecuteBtn.Size = new System.Drawing.Size(90, 27);
             this.ExecuteBtn.TabIndex = 4;
@@ -322,10 +322,10 @@
             this.tabCentralControl.Controls.Add(this.FileSystemTab);
             this.tabCentralControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabCentralControl.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabCentralControl.Location = new System.Drawing.Point(269, 36);
+            this.tabCentralControl.Location = new System.Drawing.Point(268, 36);
             this.tabCentralControl.Name = "tabCentralControl";
             this.tabCentralControl.SelectedIndex = 0;
-            this.tabCentralControl.Size = new System.Drawing.Size(841, 213);
+            this.tabCentralControl.Size = new System.Drawing.Size(842, 213);
             this.tabCentralControl.TabIndex = 5;
             this.tabCentralControl.SelectedIndexChanged += new System.EventHandler(this.tabCentralControl_SelectedIndexChanged);
             // 
@@ -342,7 +342,7 @@
             this.TabSync.Location = new System.Drawing.Point(4, 27);
             this.TabSync.Name = "TabSync";
             this.TabSync.Padding = new System.Windows.Forms.Padding(3);
-            this.TabSync.Size = new System.Drawing.Size(833, 182);
+            this.TabSync.Size = new System.Drawing.Size(834, 182);
             this.TabSync.TabIndex = 0;
             this.TabSync.Text = "sync";
             this.TabSync.UseVisualStyleBackColor = true;
@@ -458,7 +458,7 @@
             this.TabDump.Location = new System.Drawing.Point(4, 27);
             this.TabDump.Name = "TabDump";
             this.TabDump.Padding = new System.Windows.Forms.Padding(3);
-            this.TabDump.Size = new System.Drawing.Size(833, 182);
+            this.TabDump.Size = new System.Drawing.Size(834, 182);
             this.TabDump.TabIndex = 2;
             this.TabDump.Text = "dump";
             this.TabDump.UseVisualStyleBackColor = true;
@@ -487,7 +487,8 @@
             this.dumpsourceProviderBox.Items.AddRange(new object[] {
             "contentPath",
             "dirPath",
-            "filePath"});
+            "filePath",
+            "webServer"});
             this.dumpsourceProviderBox.Location = new System.Drawing.Point(89, 16);
             this.dumpsourceProviderBox.Name = "dumpsourceProviderBox";
             this.dumpsourceProviderBox.Size = new System.Drawing.Size(159, 26);
@@ -508,7 +509,7 @@
             this.TabDelete.Location = new System.Drawing.Point(4, 27);
             this.TabDelete.Name = "TabDelete";
             this.TabDelete.Padding = new System.Windows.Forms.Padding(3);
-            this.TabDelete.Size = new System.Drawing.Size(833, 182);
+            this.TabDelete.Size = new System.Drawing.Size(834, 182);
             this.TabDelete.TabIndex = 3;
             this.TabDelete.Text = "delete";
             this.TabDelete.UseVisualStyleBackColor = true;
@@ -517,7 +518,7 @@
             // 
             this.TabGetSystemInfo.Location = new System.Drawing.Point(4, 27);
             this.TabGetSystemInfo.Name = "TabGetSystemInfo";
-            this.TabGetSystemInfo.Size = new System.Drawing.Size(833, 182);
+            this.TabGetSystemInfo.Size = new System.Drawing.Size(834, 182);
             this.TabGetSystemInfo.TabIndex = 4;
             this.TabGetSystemInfo.Text = "getSystemInfo";
             this.TabGetSystemInfo.UseVisualStyleBackColor = true;
@@ -526,7 +527,7 @@
             // 
             this.TabGetDependencies.Location = new System.Drawing.Point(4, 27);
             this.TabGetDependencies.Name = "TabGetDependencies";
-            this.TabGetDependencies.Size = new System.Drawing.Size(833, 182);
+            this.TabGetDependencies.Size = new System.Drawing.Size(834, 182);
             this.TabGetDependencies.TabIndex = 5;
             this.TabGetDependencies.Text = "getDependencies";
             this.TabGetDependencies.UseVisualStyleBackColor = true;
@@ -536,7 +537,7 @@
             this.FileSystemTab.Location = new System.Drawing.Point(4, 27);
             this.FileSystemTab.Name = "FileSystemTab";
             this.FileSystemTab.Padding = new System.Windows.Forms.Padding(3);
-            this.FileSystemTab.Size = new System.Drawing.Size(833, 182);
+            this.FileSystemTab.Size = new System.Drawing.Size(834, 182);
             this.FileSystemTab.TabIndex = 1;
             this.FileSystemTab.Text = "File System";
             this.FileSystemTab.UseVisualStyleBackColor = true;
@@ -547,9 +548,9 @@
             this.cellpanelfordesigneroptions.Controls.Add(this.OperationSettingsLbl);
             this.cellpanelfordesigneroptions.Controls.Add(this.WhatIfChkBox);
             this.cellpanelfordesigneroptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cellpanelfordesigneroptions.Location = new System.Drawing.Point(269, 255);
+            this.cellpanelfordesigneroptions.Location = new System.Drawing.Point(268, 255);
             this.cellpanelfordesigneroptions.Name = "cellpanelfordesigneroptions";
-            this.cellpanelfordesigneroptions.Size = new System.Drawing.Size(722, 39);
+            this.cellpanelfordesigneroptions.Size = new System.Drawing.Size(719, 39);
             this.cellpanelfordesigneroptions.TabIndex = 6;
             // 
             // operationSettingsBox

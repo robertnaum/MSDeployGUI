@@ -15,7 +15,8 @@ namespace MSDeployGUI.Provider
         public static readonly SourceProvider contentPath = new SourceProvider(0, "contentPath");
         public static readonly SourceProvider filePath = new SourceProvider(1, "filePath");
         public static readonly SourceProvider dirPath = new SourceProvider(2, "dirPath");
-       
+        public static readonly SourceProvider webServer = new SourceProvider(3, "webServer");
+
         protected SourceProvider(int index, string name)
         {
             this.index = index;

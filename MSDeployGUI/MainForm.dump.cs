@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MSDeployGUI.Provider;
-using Microsoft.WindowsAPICodePack.Dialogs;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
 using MSDeployGUI.Model;
 using MSDeployGUI.Model.Command;
+using MSDeployGUI.Provider;
+using System;
+using System.Windows.Forms;
 
 namespace MSDeployGUI
 {
@@ -18,13 +13,23 @@ namespace MSDeployGUI
         private void DatabindDumpTab()
         {
             var dumpCmd = new DumpCommand();
-            dumpsourceProviderBox.DataBindings.Add("Text", dumpCmd, "SourceProvider", true, DataSourceUpdateMode.OnPropertyChanged);
+            dumpsourceProviderBox.DataBindings.Add("Text", dumpCmd, "sourceProvider", true, DataSourceUpdateMode.OnPropertyChanged);
+            dumpsourcePathToPOBox.DataBindings.Add("Text", dumpCmd, "SourcePathToPOBox", true, DataSourceUpdateMode.OnPropertyChanged);
             _commands[Verb.dump] = dumpCmd;
-            dumpsourceProviderBox.SelectedIndex = 0;
+            //dumpsourceProviderBox.SelectedIndex = 0;
         }
 
         private void dumpsourceProviderBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ComboBox box = sender as ComboBox;
+            if (box?.SelectedItem.ToString() == SourceProvider.webServer)
+            {
+                dumpSourceFileFolderDialogBtn.Enabled = false;
+            }
+            else
+            {
+                dumpSourceFileFolderDialogBtn.Enabled = true;
+            }
             CurrentCommand?.RefreshCommandBox(commandBox);
         }
 
